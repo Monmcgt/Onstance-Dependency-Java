@@ -3,7 +3,9 @@ package me.monmcgt.code.onstance.packet;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public class Packet {
+import java.io.Serializable;
+
+public class Packet implements Serializable {
     private String type;
 
     public String getType() {
