@@ -3,10 +3,12 @@ package me.monmcgt.code.onstance.packet;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public abstract class Packet {
+public class Packet {
     private String type;
 
-    public abstract String getType();
+    public String getType() {
+        return type;
+    }
 
     public void setType(String type) {
         this.type = type;
