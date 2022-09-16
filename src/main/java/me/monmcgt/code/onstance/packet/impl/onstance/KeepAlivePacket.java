@@ -1,18 +1,18 @@
-package me.monmcgt.code.onstance.packet.impl;
+package me.monmcgt.code.onstance.packet.impl.onstance;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 import me.monmcgt.code.onstance.packet.Packet;
 
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class KeepAlivePacket extends Packet {
     @Override
     public String getType() {
-        return "keep-alive";
+        return "onstance/keep-alive";
     }
 
     @SerializedName("verify-code")
