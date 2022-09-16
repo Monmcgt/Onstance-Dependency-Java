@@ -4,9 +4,13 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public abstract class Packet {
-    public String type;
+    private String type;
 
     public abstract String getType();
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     private static final Gson gson = new GsonBuilder().create();
 
