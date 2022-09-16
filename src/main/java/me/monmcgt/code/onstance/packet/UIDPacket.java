@@ -7,7 +7,8 @@ public abstract class UIDPacket extends Packet {
         return uid;
     }
 
-    public void setUid(String uid) {
+    public UIDPacket setUid(String uid) {
         this.uid = uid;
+        return this;
     }
 }
