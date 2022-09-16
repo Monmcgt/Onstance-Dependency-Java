@@ -15,6 +15,10 @@ public abstract class Packet {
         return gson.toJson(packet);
     }
 
+    public static Packet deserialize(String json) {
+        return deserialize(json, Packet.class);
+    }
+
     public static Packet deserialize(String json, Class<? extends Packet> packetClass) {
         return gson.fromJson(json, packetClass);
     }
