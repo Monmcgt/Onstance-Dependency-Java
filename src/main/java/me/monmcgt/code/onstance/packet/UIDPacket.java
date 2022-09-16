@@ -1,6 +1,6 @@
 package me.monmcgt.code.onstance.packet;
 
-public abstract class UIDPacket extends Packet {
+public class UIDPacket extends Packet {
     private String uid;
 
     public String getUid() {
