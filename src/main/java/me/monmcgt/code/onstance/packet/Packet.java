@@ -12,6 +12,10 @@ public abstract class Packet {
         this.type = type;
     }
 
+    public String serialize() {
+        return gson.toJson(this);
+    }
+
     private static final Gson gson = new GsonBuilder().create();
 
     public static String serialize(Packet packet) {
