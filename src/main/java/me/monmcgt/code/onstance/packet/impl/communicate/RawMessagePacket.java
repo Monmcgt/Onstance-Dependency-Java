@@ -3,16 +3,16 @@ package me.monmcgt.code.onstance.packet.impl.communicate;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import me.monmcgt.code.onstance.packet.UIDPacket;
+import me.monmcgt.code.onstance.packet.Packet;
 
 @Getter
 @Setter
 @Builder
-public class MessagePacket extends UIDPacket {
+public class RawMessagePacket extends Packet {
     private String message;
 
     @Override
     public String getType() {
-        return "communicate/message";
+        return "communicate/raw-message";
     }
 }
