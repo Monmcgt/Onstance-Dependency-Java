@@ -9,7 +9,7 @@ import me.monmcgt.code.onstance.packet.Packet;
 @Setter
 @Builder
 public class RequestPacket extends Packet {
-    private Packet packet;
+    private Class<? extends Packet> packetClass;
 
     @Override
     public String getType() {
