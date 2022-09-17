@@ -8,7 +8,7 @@ import me.monmcgt.code.onstance.packet.Packet;
 @Getter
 @Setter
 @Builder
-public class InitPacketResponse extends Packet {
+public class InitResponsePacket extends Packet {
     private boolean success;
     private String message;
 
