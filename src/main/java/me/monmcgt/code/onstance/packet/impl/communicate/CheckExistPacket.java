@@ -9,11 +9,11 @@ import me.monmcgt.code.onstance.packet.UIDPacket;
 @Setter
 @Builder
 public class CheckExistPacket extends UIDPacket {
-    @Override
-    public String getType() {
-        return "check-exist";
-    }
-
     private boolean exist;
     private String message;
+
+    @Override
+    public String getType() {
+        return "communicate/check-exist";
+    }
 }

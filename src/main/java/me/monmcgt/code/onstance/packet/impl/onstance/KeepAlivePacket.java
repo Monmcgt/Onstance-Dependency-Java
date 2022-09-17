@@ -10,11 +10,11 @@ import me.monmcgt.code.onstance.packet.Packet;
 @Setter
 @Builder
 public class KeepAlivePacket extends Packet {
+    @SerializedName("verify-code")
+    private String verifyCode;
+
     @Override
     public String getType() {
         return "onstance/keep-alive";
     }
-
-    @SerializedName("verify-code")
-    private String verifyCode;
 }

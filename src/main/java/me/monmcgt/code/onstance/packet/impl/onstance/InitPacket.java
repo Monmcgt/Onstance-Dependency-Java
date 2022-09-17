@@ -9,11 +9,11 @@ import me.monmcgt.code.onstance.packet.UIDPacket;
 @Setter
 @Builder
 public class InitPacket extends UIDPacket {
+    private boolean success;
+    private String message;
+
     @Override
     public String getType() {
         return "onstance/init-host";
     }
-
-    private boolean success;
-    private String message;
 }
